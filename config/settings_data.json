@@ -1,0 +1,80 @@
+{
+  "current": {
+    "colors_accent_1": "#80411e",
+    "social_facebook_link": "https:\/\/facebook.com\/shopify",
+    "social_pinterest_link": "https:\/\/pinterest.com\/shopify",
+    "social_instagram_link": "http:\/\/instagram.com\/shopify",
+    "social_youtube_link": "https:\/\/www.youtube.com\/shopify",
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "announcement-bar-0": {
+            "type": "announcement",
+            "settings": {
+              "text": "Coffee Time ☕",
+              "color_scheme": "accent-1",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "announcement-bar-0"
+        ],
+        "settings": {}
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/Beige_Retro_Vector_Coffee_House_Logo.png",
+          "logo_width": 120,
+          "logo_position": "top-center",
+          "menu": "main-menu",
+          "show_line_separator": true,
+          "enable_sticky_header": true
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "56d43eb8-376f-4848-b6f7-4fafce59bbb1": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Navigation",
+              "menu": "footer"
+            }
+          },
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Info",
+              "menu": "footer"
+            }
+          },
+          "292d163f-42c8-468f-9e74-f58935cb4967": {
+            "type": "text",
+            "settings": {
+              "heading": "Matador Coffee",
+              "subtext": "<p><strong>📍1152 Tori Lane, Salt Lake City, UT, 84116<\/strong><\/p><p><strong>☎801-675-1975<\/strong><\/p><p><strong>✉Hello@matadorcoffee.com<\/strong><\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "56d43eb8-376f-4848-b6f7-4fafce59bbb1",
+          "footer-0",
+          "292d163f-42c8-468f-9e74-f58935cb4967"
+        ],
+        "settings": {
+          "color_scheme": "background-2",
+          "newsletter_enable": true,
+          "newsletter_heading": "4 Coffee Lovers 🤎",
+          "show_social": true,
+          "enable_country_selector": true,
+          "enable_language_selector": true,
+          "payment_enable": true
+        }
+      }
+    },
+    "content_for_index": []
+  }
+}
