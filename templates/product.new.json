@@ -1,0 +1,31 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-test-product",
+      "blocks": {
+        "193d97a7-64b5-4bd1-8d37-d336b39929ac": {
+          "type": "tax_notice_block",
+          "settings": {
+            "tax_notice_text": "Tax Included"
+          }
+        },
+        "b8fd9e62-c8c2-467c-89dd-df325952b3aa": {
+          "type": "shipping_notice_block",
+          "settings": {
+            "shipping_notice_text": "Shipping Takes 4-5 days"
+          }
+        }
+      },
+      "block_order": [
+        "193d97a7-64b5-4bd1-8d37-d336b39929ac",
+        "b8fd9e62-c8c2-467c-89dd-df325952b3aa"
+      ],
+      "settings": {
+        "show_reviews": true
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
