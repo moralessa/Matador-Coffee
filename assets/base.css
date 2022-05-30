@@ -2113,3 +2113,15 @@ details-disclosure > details {
   word-break: break-word;
 }
 
+.coffee-info-table{
+  border: 1px solid #445958;
+}
+
+
+.coffee-info-table td, .coffee-info-table th{
+  padding: 1rem .5rem;
+}
+
+.coffee-info-table th{
+  text-align: start;
+}

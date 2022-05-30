@@ -117,6 +117,112 @@
                 </div>
               </details>
             </div>
+            {%- when 'coffee_info' -%}
+            <div class="product__accordion accordion" {{ block.shopify_attributes }}>
+              <details>
+                <summary>
+                  <div class="summary__title">
+                    {% render 'icon-accordion', icon: block.settings.icon %}
+                    <h2 class="h4 accordion__title">
+                      Coffee Info
+                    </h2>
+                  </div>
+                  {% render 'icon-caret' %}
+                </summary>
+                <div class="accordion__content rte">
+                  <table class="coffee-info-table">
+                    <tr>
+                      <th>Taste</th>
+                      <td>{{product.metafields.coffee_info.taste}}</td>
+                    </tr>
+                    <tr>
+                      <th>Strength</th>
+                      {%assign strengthCount = product.metafields.coffee_info.strength | metafield_text %}
+                      {%assign strengthRemainder = 5 | minus: strengthCount%}
+                      <td>
+                        {%for i in (1..strengthCount)%}
+                        <?xml version="1.0"?>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
+                          version="1.1" width="25" height="25" x="0" y="0" viewBox="0 0 511.499 511.499"
+                          style="enable-background:new 0 0 25 25" xml:space="preserve" class="">
+                          <g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="m221.864 437.533c25.944-30.453 50.45-59.217 51.704-116.002 1.247-56.471-20.781-82.715-46.287-113.102-25.686-30.602-54.798-65.286-53.302-133.052.474-21.475 4.581-41.438 9.767-57.239-24.585 12.975-47.062 32.681-66.137 58.439-35.572 48.034-55.159 111.661-55.154 179.16.005 67.498 19.602 131.127 55.181 179.166 18.673 25.212 40.601 44.626 64.574 57.609 11.011-20.975 25.792-38.708 39.654-54.979z"
+                                fill="#80411e" data-original="#000000" style="" class="" />
+                              <path
+                                d="m393.864 76.596c-36.579-49.39-85.635-76.592-138.132-76.596-.006 0-.005 0-.012 0-11.024 0-21.894 1.215-32.531 3.568-10.139 18.166-18.54 41.794-19.218 72.471-1.247 56.471 20.782 82.715 46.288 113.103 25.686 30.601 54.798 65.286 53.301 133.052-1.489 67.454-30.655 101.688-58.86 134.794-12.565 14.748-25.341 30.268-34.717 47.372 14.798 4.702 30.136 7.138 45.784 7.14h.012c52.491 0 101.543-27.198 138.111-76.577 35.572-48.034 55.159-111.661 55.154-179.16s-19.602-131.128-55.18-179.167z"
+                                fill="#80411e" data-original="#000000" style="" class="" />
+                            </g>
+                          </g>
+                        </svg>
+                        {%endfor%}
+                        {%for i in (1..strengthRemainder)%}
+                          <?xml version="1.0"?>
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
+                            version="1.1" width="25" height="25" x="0" y="0" viewBox="0 0 511.499 511.499"
+                            style="enable-background:new 0 0 20 20" xml:space="preserve" class="">
+                            <g>
+                              <g xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="m393.864 76.596c-36.579-49.39-85.635-76.592-138.132-76.596-.006 0-.005 0-.012 0-5.442 0-10.844.309-16.201.888-.005.001-.011.001-.016.002-46.317 5.011-89.121 31.432-121.894 75.687-35.572 48.034-55.159 111.661-55.154 179.16.005 67.498 19.602 131.127 55.181 179.166 36.579 49.39 85.635 76.592 138.132 76.596h.012c52.491 0 101.543-27.198 138.111-76.577 35.572-48.034 55.159-111.661 55.154-179.16-.006-67.498-19.603-131.127-55.181-179.166zm-301.409 179.139c-.005-61.115 17.49-118.4 49.263-161.304 19.327-26.099 42.49-44.826 67.637-55.15-7.676 16.774-13.078 37.43-13.076 64.181.004 58.06 25.511 88.217 48.015 114.825 21.956 25.959 40.917 48.377 40.921 95.453.004 47.074-18.954 69.489-40.905 95.444-14.77 17.463-29.962 35.428-39.236 61.16-65.302-29.559-112.611-114.586-112.619-214.609zm277.327 161.333c-30.77 41.55-71.255 64.431-114.003 64.431-.002 0-.007 0-.01 0-7.471 0-14.823-.713-22.03-2.063 7.608-20.253 20.229-35.215 33.476-50.879 22.5-26.604 48.003-56.759 47.999-114.819s-25.511-88.217-48.015-114.824c-21.956-25.959-40.917-48.378-40.921-95.453-.003-34.53 10.669-55.966 23.126-73.277 2.1-.111 4.204-.183 6.316-.183h.01c90.042.007 163.305 101.284 163.314 225.764.005 61.114-17.49 118.399-49.262 161.303z"
+                                  fill="#80411e" data-original="#000000" style="" />
+                              </g>
+                            </g>
+                          </svg>
+                        {%endfor%}
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Acidity</th>
+                      {%assign acidityCount = product.metafields.coffee_info.acidity | metafield_text %}
+                      {%assign acidityRemainder = 5 | minus: acidityCount%}
+                      <td>
+                  {%for i in (1..acidityCount)%}
+                        <?xml version="1.0"?>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
+                          version="1.1" width="25" height="25" x="0" y="0" viewBox="0 0 511.499 511.499"
+                          style="enable-background:new 0 0 25 25" xml:space="preserve" class="">
+                          <g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="m221.864 437.533c25.944-30.453 50.45-59.217 51.704-116.002 1.247-56.471-20.781-82.715-46.287-113.102-25.686-30.602-54.798-65.286-53.302-133.052.474-21.475 4.581-41.438 9.767-57.239-24.585 12.975-47.062 32.681-66.137 58.439-35.572 48.034-55.159 111.661-55.154 179.16.005 67.498 19.602 131.127 55.181 179.166 18.673 25.212 40.601 44.626 64.574 57.609 11.011-20.975 25.792-38.708 39.654-54.979z"
+                                fill="#80411e" data-original="#000000" style="" class="" />
+                              <path
+                                d="m393.864 76.596c-36.579-49.39-85.635-76.592-138.132-76.596-.006 0-.005 0-.012 0-11.024 0-21.894 1.215-32.531 3.568-10.139 18.166-18.54 41.794-19.218 72.471-1.247 56.471 20.782 82.715 46.288 113.103 25.686 30.601 54.798 65.286 53.301 133.052-1.489 67.454-30.655 101.688-58.86 134.794-12.565 14.748-25.341 30.268-34.717 47.372 14.798 4.702 30.136 7.138 45.784 7.14h.012c52.491 0 101.543-27.198 138.111-76.577 35.572-48.034 55.159-111.661 55.154-179.16s-19.602-131.128-55.18-179.167z"
+                                fill="#80411e" data-original="#000000" style="" class="" />
+                            </g>
+                          </g>
+                        </svg>
+                        {%endfor%}
+                        {%for i in (1..acidityRemainder)%}
+                          <?xml version="1.0"?>
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
+                            version="1.1" width="25" height="25" x="0" y="0" viewBox="0 0 511.499 511.499"
+                            style="enable-background:new 0 0 20 20" xml:space="preserve" class="">
+                            <g>
+                              <g xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="m393.864 76.596c-36.579-49.39-85.635-76.592-138.132-76.596-.006 0-.005 0-.012 0-5.442 0-10.844.309-16.201.888-.005.001-.011.001-.016.002-46.317 5.011-89.121 31.432-121.894 75.687-35.572 48.034-55.159 111.661-55.154 179.16.005 67.498 19.602 131.127 55.181 179.166 36.579 49.39 85.635 76.592 138.132 76.596h.012c52.491 0 101.543-27.198 138.111-76.577 35.572-48.034 55.159-111.661 55.154-179.16-.006-67.498-19.603-131.127-55.181-179.166zm-301.409 179.139c-.005-61.115 17.49-118.4 49.263-161.304 19.327-26.099 42.49-44.826 67.637-55.15-7.676 16.774-13.078 37.43-13.076 64.181.004 58.06 25.511 88.217 48.015 114.825 21.956 25.959 40.917 48.377 40.921 95.453.004 47.074-18.954 69.489-40.905 95.444-14.77 17.463-29.962 35.428-39.236 61.16-65.302-29.559-112.611-114.586-112.619-214.609zm277.327 161.333c-30.77 41.55-71.255 64.431-114.003 64.431-.002 0-.007 0-.01 0-7.471 0-14.823-.713-22.03-2.063 7.608-20.253 20.229-35.215 33.476-50.879 22.5-26.604 48.003-56.759 47.999-114.819s-25.511-88.217-48.015-114.824c-21.956-25.959-40.917-48.378-40.921-95.453-.003-34.53 10.669-55.966 23.126-73.277 2.1-.111 4.204-.183 6.316-.183h.01c90.042.007 163.305 101.284 163.314 225.764.005 61.114-17.49 118.399-49.262 161.303z"
+                                  fill="#80411e" data-original="#000000" style="" />
+                              </g>
+                            </g>
+                          </svg>
+                        {%endfor%}
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Type</th>
+                      <td>{{product.metafields.coffee_info.type}}</td>
+                    </tr>
+                    <tr>
+                      <th>Origin</th>
+                      <td>{{product.metafields.coffee_info.origin}}</td>
+                    </tr>
+                  </table>
+                </div>
+              </details>
+            </div>
           {%- when 'quantity_selector' -%}
             <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
               <label class="form__label" for="Quantity-{{ section.id }}">
@@ -614,6 +720,122 @@
             {
               "value": "box",
               "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__2.label"
+            },
+            {
+              "value": "chat_bubble",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__3.label"
+            },
+            {
+              "value": "check_mark",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__4.label"
+            },
+            {
+              "value": "dryer",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__5.label"
+            },
+            {
+              "value": "eye",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__6.label"
+            },
+            {
+              "value": "heart",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__7.label"
+            },
+            {
+              "value": "iron",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__8.label"
+            },
+            {
+              "value": "leaf",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__9.label"
+            },
+            {
+              "value": "leather",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__10.label"
+            },
+            {
+              "value": "lock",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__11.label"
+            },
+            {
+              "value": "map_pin",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__12.label"
+            },
+            {
+              "value": "pants",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__13.label"
+            },
+            {
+              "value": "plane",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__14.label"
+            },
+            {
+              "value": "price_tag",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__15.label"
+            },
+            {
+              "value": "question_mark",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__16.label"
+            },
+            {
+              "value": "return",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__17.label"
+            },
+            {
+              "value": "ruler",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__18.label"
+            },
+            {
+              "value": "shirt",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__19.label"
+            },
+            {
+              "value": "shoe",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__20.label"
+            },
+            {
+              "value": "silhouette",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__21.label"
+            },
+            {
+              "value": "star",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__22.label"
+            },
+            {
+              "value": "truck",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__23.label"
+            },
+            {
+              "value": "washing",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__24.label"
+            }
+          ],
+          "default": "check_mark",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.label"
+        }
+      ]
+    },
+    {
+      "type": "coffee_info",
+      "name": "Coffee Info",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_info",
+          "label": "Show product info"
+        },
+        {
+          "type": "select",
+          "id": "icon",
+          "options": [
+            {
+              "value": "none",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__1.label"
+            },
+            {
+              "value": "box",
+              "label": "t:sections.main-product.blocks.collapsible_tab.icon.options__2.label"
             },
             {
               "value": "chat_bubble",
