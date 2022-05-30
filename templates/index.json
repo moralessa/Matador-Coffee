@@ -185,10 +185,78 @@
         "image_ratio": "adapt",
         "column_alignment": "center",
         "background_style": "primary",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false
       }
+    },
+    "1653877619c1f5ba98": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "You may also like 🤎",
+        "collection": "coffee",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false
+      }
+    },
+    "16538783668fa672f2": {
+      "type": "testimonials-slider",
+      "blocks": {
+        "31e929fb-03a1-418a-9755-530bc70d5bdc": {
+          "type": "Testimonial",
+          "settings": {
+            "testimonial_img": "shopify:\/\/shop_images\/user_1.jpg",
+            "testimonial_name": "Mike",
+            "testimonial_review": "Tincidunt lobortis feugiat vivamus at. Praesent tristique magna sit amet. Eget duis at tellus at urna"
+          }
+        },
+        "9e5948f7-9ac3-4b2a-9343-f1d71da8ef99": {
+          "type": "Testimonial",
+          "settings": {
+            "testimonial_img": "shopify:\/\/shop_images\/user_2.jpg",
+            "testimonial_name": "Jane",
+            "testimonial_review": "Diam phasellus vestibulum lorem sed. Posuere sollicitudin aliquam ultrices sagittis orci"
+          }
+        },
+        "b6d18395-bcba-45bf-9af1-a700686a3d25": {
+          "type": "Testimonial",
+          "settings": {
+            "testimonial_img": "shopify:\/\/shop_images\/user_3.jpg",
+            "testimonial_name": "John",
+            "testimonial_review": "Ultrices vitae auctor eu augue. Blandit massa enim nec dui nunc mattis enim ut. Orci phasellus"
+          }
+        },
+        "73ca10d0-7079-4834-81d7-6c297f811245": {
+          "type": "Testimonial",
+          "settings": {
+            "testimonial_img": "shopify:\/\/shop_images\/user_4.jpg",
+            "testimonial_name": "Justin",
+            "testimonial_review": "get mi proin sed libero enim sed. Fermentum dui faucibus in ornare quam viverra. Elementum curabitur vitae nunc sed velit dignissim."
+          }
+        },
+        "6d3dbc63-f0ff-4b3c-a675-b171952ff254": {
+          "type": "Testimonial",
+          "settings": {
+            "testimonial_img": "shopify:\/\/shop_images\/user_5.jpg",
+            "testimonial_name": "Kim",
+            "testimonial_review": "Eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis. Nibh sed pulvinar proin gravida hendrerit."
+          }
+        }
+      },
+      "block_order": [
+        "31e929fb-03a1-418a-9755-530bc70d5bdc",
+        "9e5948f7-9ac3-4b2a-9343-f1d71da8ef99",
+        "b6d18395-bcba-45bf-9af1-a700686a3d25",
+        "73ca10d0-7079-4834-81d7-6c297f811245",
+        "6d3dbc63-f0ff-4b3c-a675-b171952ff254"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -198,6 +266,8 @@
     "image_text",
     "1653860665af68e5ad",
     "1653860771e109c885",
-    "165387638778277de2"
+    "165387638778277de2",
+    "1653877619c1f5ba98",
+    "16538783668fa672f2"
   ]
 }

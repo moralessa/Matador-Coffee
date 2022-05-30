@@ -1,0 +1,106 @@
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        {%for block in section.blocks%}
+        {%unless block.type != 'Testimonial'%}
+        <div class="swiper-slide">
+          <img src="{{block.settings.testimonial_img| img_url: '300x'}}" />
+          <h3>{{block.settings.testimonial_name}}</h3>
+          <div class="review">
+            <p><b>"</b> {{block.settings.testimonial_review}} <b>"</b></p>
+          </div>
+        </div>
+        {%endunless%}
+        {%endfor%}
+    </div>
+    
+  <style>
+  /*Custom CSS*/
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 400px;
+  background-color: #FAF1E9;
+  border-radius: 15px;
+  border: 2px solid #80411E;
+  color: #1A1B18;
+}
+
+.swiper-slide img {
+  position: absolute;
+  left: 50%;
+  top: 2%;
+  transform: translate(-50%);
+  display: block;
+  width: 50%;
+  border-radius: 50%;
+}
+
+.swiper-slide h3{
+   position: absolute;
+   left: 50%;
+   top: 35%;
+   transform: translate(-50%);
+   font-size: 2.5rem;
+}
+
+.swiper-slide .review{
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 95%;
+  text-align: center;
+}
+
+.swiper-slide .review p{
+  margin-top: 0;
+  padding: 0 1rem;
+}
+
+.swiper-slide .review b{
+  font-size: 2rem;
+}
+  </style>
+
+{% schema %}
+    {
+      "name": "Testimonial Slider",
+      "settings":[],
+      "presets":[
+        {
+          "name": "testimonial slider"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "Testimonial",
+          "name": "Testimonial ",
+          "settings": [
+            {
+              "id": "testimonial_img",
+              "label": "Testimonial Image",
+              "type": "image_picker"
+            },
+            {
+              "id": "testimonial_name",
+              "label": "Testimonial Name",
+              "type": "text"
+            },
+            {
+              "id": "testimonial_review",
+              "label": "Testimonial Review",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    }
+{% endschema %}
