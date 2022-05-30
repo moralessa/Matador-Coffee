@@ -145,6 +145,50 @@
         "desktop_layout": "left",
         "mobile_layout": "collage"
       }
+    },
+    "165387638778277de2": {
+      "type": "multicolumn",
+      "blocks": {
+        "16538763872385b59b-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/farmer.png",
+            "title": "Direct Relations to Farmers",
+            "text": "<p>Et molestie ac feugiat sed lectus vestibulum mattis. Ac ut consequat semper viverra nam libero justo. Arcu dictum varius duis at. Lectus mauris ultrices eros in.<\/p>"
+          }
+        },
+        "16538763872385b59b-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/coffee-plant.png",
+            "title": "Plant a Tree for 3rd Order",
+            "text": "<p>Quis imperdiet massa tincidunt nunc pulvinar sapien et. Ornare quam viverra orci sagittis.Aliquet eget sit amet tellus cras adipiscing. Diam quis enim lobortis scelerisque.<\/p>"
+          }
+        },
+        "16538763872385b59b-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/roaster.png",
+            "title": "Roasted by Hand in SLC",
+            "text": "<p>Consequat nisl vel pretium lectus quam id leo in. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Mauris vitae ultricies leo integer malesuada nunc vel.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16538763872385b59b-0",
+        "16538763872385b59b-1",
+        "16538763872385b59b-2"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
     }
   },
   "order": [
@@ -153,6 +197,7 @@
     "1653860518a748354b",
     "image_text",
     "1653860665af68e5ad",
-    "1653860771e109c885"
+    "1653860771e109c885",
+    "165387638778277de2"
   ]
 }
