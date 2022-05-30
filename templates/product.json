@@ -49,6 +49,13 @@
           "type": "share",
           "settings": {}
         },
+        "05f01fd1-b20c-4cf6-98cb-91a32f054072": {
+          "type": "coffee_info",
+          "settings": {
+            "show_info": false,
+            "icon": "star"
+          }
+        },
         "ee9ea5f9-4fea-4dc1-bcb0-1db3a102b742": {
           "type": "collapsible_tab",
           "settings": {
@@ -69,6 +76,7 @@
         "buy_buttons",
         "description",
         "share",
+        "05f01fd1-b20c-4cf6-98cb-91a32f054072",
         "ee9ea5f9-4fea-4dc1-bcb0-1db3a102b742"
       ],
       "settings": {
